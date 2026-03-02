@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GVS Sport | Oficial</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gvs-brand': '#008444', // Verde oficial extraído da logo
+                        'gvs-dark': '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-8 py-1 flex justify-between items-center">
+            
+            <a href="#" class="flex items-center group">
+                <img src="https://static.wixstatic.com/media/5dda37_eb5bdbbbef40424cbc2bcb04c4749bbd~mv2.png" 
+                     alt="GVS Sport Logo" 
+                     class="h-14 md:h-20 transition-transform duration-300 group-hover:scale-105"> 
+            </a>
+
+            <nav class="hidden md:flex space-x-10 text-gray-800 font-bold uppercase text-xs tracking-wider">
+                <a href="#" class="text-gvs-brand hover:text-green-700 transition">Início</a>
+                <a href="#empresa" class="hover:text-gvs-brand transition">Empresa</a>
+                <a href="#produtos" class="hover:text-gvs-brand transition">Produtos</a>
+                <a href="#unidades" class="hover:text-gvs-brand transition">Unidades</a>
+                <a href="#contato" class="hover:text-gvs-brand transition">Contato</a>
+            </nav>
+
+            <div class="flex items-center">
+                <a href="#contato" class="bg-gvs-brand text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-green-800 transition shadow-lg">
+                    TRABALHE CONOSCO
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-[500px] md:h-[650px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://static.wixstatic.com/media/5dda37_600f433442174f63889274d709f770ba~mv2.jpg" 
+                 class="w-full h-full object-cover" 
+                 alt="Retrovisores GVS">
+            <div class="absolute inset-0 bg-black/60"></div> 
+        </div>
+
+        <div class="relative z-10 container mx-auto px-6 text-center text-white">
+            <h1 class="text-4xl md:text-7xl font-bold mb-6 italic leading-tight tracking-tighter uppercase">
+                Líder na fabricação de <br> 
+                <span class="text-gvs-brand">retrovisores</span>
+            </h1>
+            <p class="text-lg md:text-2xl mb-10 max-w-2xl mx-auto font-light">
+                Segurança e estilo para quem vive sobre duas rodas. <br class="hidden md:block">
+                Qualidade original desde 2001.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#produtos" class="bg-gvs-brand hover:bg-green-700 text-white px-10 py-4 rounded-md font-bold transition-all shadow-xl uppercase tracking-widest text-sm text-center">
+                    Ver Catálogo
+                </a>
+                <a href="#empresa" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white px-10 py-4 rounded-md font-bold transition-all text-sm uppercase tracking-widest text-center">
+                    Nossa História
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-16 bg-gray-50" style="clip-path: polygon(0 100%, 100% 100%, 100% 0);"></div>
+    </section>
+
+    <section id="empresa" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl z-10 relative">
+                        <img src="https://static.wixstatic.com/media/5dda37_87e74222cef147bca1f6314906bef93d~mv2.png" 
+                             alt="Fábrica GVS Sport" 
+                             class="w-full h-auto transform hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-gvs-brand text-white p-8 rounded-xl shadow-2xl z-20 hidden md:block">
+                        <span class="block text-4xl font-bold italic">20+</span>
+                        <span class="text-sm uppercase tracking-widest font-bold">Anos de <br> História</span>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-gvs-brand font-bold tracking-widest uppercase text-sm mb-4">A Maior da América Latina</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold text-gvs-dark mb-6 italic leading-tight">
+                        Paixão por motos e <br> precisão industrial.
+                    </h3>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Desde 2001, a <strong>GVS Sport</strong> transforma tecnologia em segurança. Com unidades em São Paulo e Ceará, somos referência nacional na fabricação de retrovisores e acessórios para motocicletas.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 border-t border-gray-200 pt-8">
+                        <div>
+                            <span class="block text-2xl font-bold text-gvs-brand">100%</span>
+                            <span class="text-sm text-gray-500 uppercase font-bold">Brasileira</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-gvs-brand">Líder</span>
+                            <span class="text-sm text-gray-500 uppercase font-bold">Em Retrovisores</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-gvs-brand font-bold tracking-widest uppercase text-sm mb-2">Linha Completa</h2>
+            <h3 class="text-4xl font-bold text-gvs-dark mb-12 italic">Nossas Categorias</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
+                    <div class="h-80 overflow-hidden"><img src="https://static.wixstatic.com/media/5dda37_600f433442174f63889274d709f770ba~mv2.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-gvs-dark/90 to-transparent flex flex-col justify-end p-8 text-left">
+                        <h4 class="text-white text-2xl font-bold italic mb-2">Retrovisores</h4>
+                        <a href="#" class="text-gvs-brand font-bold uppercase text-xs tracking-widest hover:text-white transition">Ver Modelos →</a>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
+                    <div class="h-80 overflow-hidden"><img src="https://static.wixstatic.com/media/5dda37_87e74222cef147bca1f6314906bef93d~mv2.png" class="w-full h-full object-cover transition duration-700 group-hover:scale-110"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-gvs-dark/90 to-transparent flex flex-col justify-end p-8 text-left">
+                        <h4 class="text-white text-2xl font-bold italic mb-2">Manoplas</h4>
+                        <a href="#" class="text-gvs-brand font-bold uppercase text-xs tracking-widest hover:text-white transition">Ver Modelos →</a>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
+                    <div class="h-80 overflow-hidden"><img src="https://static.wixstatic.com/media/5dda37_63598bb67ca840d5b9401d20d3070ada~mv2.png" class="w-full h-full object-cover transition duration-700 group-hover:scale-110"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-gvs-dark/90 to-transparent flex flex-col justify-end p-8 text-left">
+                        <h4 class="text-white text-2xl font-bold italic mb-2">Acessórios</h4>
+                        <a href="#" class="text-gvs-brand font-bold uppercase text-xs tracking-widest hover:text-white transition">Ver Modelos →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="unidades" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-gvs-brand font-bold tracking-widest uppercase text-sm mb-2">Presença Nacional</h2>
+                <h3 class="text-4xl font-bold text-gvs-dark italic">Nossas Unidades</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl group transition-all duration-300 hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden"><img src="https://static.wixstatic.com/media/5dda37_63598bb67ca840d5b9401d20d3070ada~mv2.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-gvs-dark mb-2 italic">São Paulo | Mairiporã</h4>
+                        <div class="text-gvs-brand font-bold text-sm">📍 Mairiporã - SP</div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl group transition-all duration-300 hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden"><img src="https://static.wixstatic.com/media/5dda37_87e74222cef147bca1f6314906bef93d~mv2.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-gvs-dark mb-2 italic">Ceará | Várzea Alegre</h4>
+                        <div class="text-gvs-brand font-bold text-sm">📍 Várzea Alegre - CE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-gvs-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <img src="https://static.wixstatic.com/media/5dda37_eb5bdbbbef40424cbc2bcb04c4749bbd~mv2.png" alt="GVS Logo" class="h-12 mb-6 brightness-0 invert">
+                    <p class="text-gray-400 text-sm italic">Líder na fabricação de retrovisores e acessórios.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 italic border-l-4 border-gvs-brand pl-3">Navegação</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Início</a></li>
+                        <li><a href="#empresa" class="hover:text-white transition">Empresa</a></li>
+                        <li><a href="#produtos" class="hover:text-white transition">Produtos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 italic border-l-4 border-gvs-brand pl-3">Contato</h4>
+                    <p class="text-gray-400 text-sm">📧 contato@gvssport.com.br</p>
+                    <p class="text-gray-400 text-sm mt-2">📞 (11) 4419-1234</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 italic border-l-4 border-gvs-brand pl-3">Siga-nos</h4>
+                    <div class="flex space-x-4"><span class="text-gray-400 cursor-pointer hover:text-white transition">IG</span> <span class="text-gray-400 cursor-pointer hover:text-white transition">FB</span></div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-xs">
+                © 2026 GVS Sport Brasil. Refletindo Qualidade.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
